@@ -6,5 +6,5 @@ services:
       - ./src:/www:ro
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     ports:
-      - 8080:80
+      - 80:80
     command: [nginx-debug, '-g', 'daemon off;']
